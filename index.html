@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Arturo Cantú Cisneros - Profile</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
 	</head>
 	<body>
 		<header class="container mt-4">
@@ -18,26 +19,53 @@
 			
 		</header>
 
-		<div class="mt-4 container">
-			<div class="media">
-			  <div class="media-body">
-			    <p>Hello,</p>
-			    <h2 class="mt-0 mb-1">I'm Arturo</h2>
-			    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-			  </div>
-			  <img src="https://scontent.fntr3-1.fna.fbcdn.net/v/t1.0-9/20375775_107995743204466_8371307466616756150_n.jpg?_nc_cat=102&_nc_sid=09cbfe&_nc_ohc=TpKeubluoCMAX9n6reB&_nc_ht=scontent.fntr3-1.fna&oh=de92284268166e845597afc078a9a1b4&oe=5F7832FE" class="rounded-circle ml-3" alt="Profile Picture" width="200px">
-			</div>
-			
-			<h2>About Me</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lectus ex. Aenean nec felis fringilla, suscipit nulla ac, pellentesque turpis. Suspendisse sit amet risus in enim porta rutrum at at augue. Suspendisse tempor urna id sagittis consectetur.</p>
+		<div class="container mt-5">
+			<section class="personal-info">
+				<div class="media">
+				  <div class="media-body">
+				    <p>Hello,</p>
+				    <h2 class="mt-0 mb-1">I'm Arturo</h2>
+				    <p>I'm a 23 years old Mexican, passionate for technollogy, self-motivated to learn and to face new challenges.</p>
+				    <p>Software Engineer</p>
+				    <p>Web Developer</p>
+				    <p>Front-end</p>
+				  </div>
+				  <img src="./images/profile-picture.jpg" class="rounded-circle ml-3" id="profile-picture" alt="Profile Picture" width="200px">
+				</div>
+				
+				<h2 class="mt-5">About Me</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lectus ex. Aenean nec felis fringilla, suscipit nulla ac, pellentesque turpis. Suspendisse sit amet risus in enim porta rutrum at at augue. Suspendisse tempor urna id sagittis consectetur.</p>
+			</section>
 
 			<section class="mt-4 mb-4" align="center">
 				<h2>Experience</h2>
-				<p>Suspendisse sit amet risus in enim porta rutrum at at augue. Suspendisse tempor urna id sagittis consectetur.</p>
+					  <div class="row">
+					    <div class="col">
+					      <h1> 10+ </h1>
+					      <h4>Websites Developed</h4>
+					    </div>
+					    <div class="col">
+					      <h1> 7+ </h1>
+					      <h4>Years Programming</h4>
+					    </div>
+					    <div class="col">
+					      <h1> 20+ </h1>
+					      <h4>Dominion Technologies</h4>
+					    </div>
+					  </div>
 
 				<h2>Skills</h2>
 				<p>More than 5 years of experience in different programming languages.</p>
+				<i class="devicon-cplusplus-plain colored skill-icon"></i>
+				<i class="devicon-c-plain colored skill-icon"></i>
+				<i class="devicon-java-plain colored skill-icon"></i>
+				<i class="devicon-python-plain colored skill-icon"></i>
+				<i class="devicon-android-plain colored skill-icon"></i>
+				<i class="devicon-html5-plain colored skill-icon"></i>
+				<i class="devicon-javascript-plain colored skill-icon"></i>
 			</section>
+
+
 			<h2>Past Projects</h2>
 			  <div class="row">
 			    <div class="col">
@@ -74,3 +102,46 @@
 
 	</body>
 </html>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+@media only screen and (max-width: 600px) {
+	body p {
+		font-size: 16px;
+	}
+	body h2 {
+		font-size: 34px;
+	}
+	.skill-icon {
+		margin: 5px;
+		font-size: 35px;
+	}
+}
+@media only screen and (min-width: 600px) {
+	body p {
+		font-size: 18px;
+	}
+	body h2 {
+		font-size: 38px;
+	}
+	.skill-icon {
+		margin: 5px;
+		font-size: 80px;
+	}
+}
+
+#profile-picture {
+	margin-top: auto;
+	margin-bottom: auto;
+	border: solid #fff 5px;
+	-webkit-box-shadow: 50px 20px 0px -4px #0984e3;
+	-moz-box-shadow: 50px 20px 0px -4px #0984e3;
+	box-shadow: 50px 20px 0px -4px #0984e3;
+}
+.personal-info {
+	height: 100vh;
+}
+
+</style>
