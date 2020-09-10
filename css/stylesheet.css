@@ -1,0 +1,128 @@
+html {
+  scroll-behavior: smooth;
+}
+h1 {
+	color: #2d3436;
+}
+h2, h3, h4, h5, p {
+	color: #797979;
+}
+.social-icons {
+	float: right;
+}
+.social-icons a{
+	text-decoration: none;
+	font-size: 22px;
+	color: #0984e3;
+	margin-right: .5em;
+}
+.btn {
+	border-radius: 0 !important;
+}
+.light-red {
+	color: #ff7675;
+}
+.btn-secondary {
+	height: 40px;
+	width: 150px;
+	margin: 20px 20px 0 0;
+	border: 0;
+}
+#download-btn {
+	background-color: #ff7675 !important;
+}
+#sec-btn {
+	color: #000;
+	background-color: #55efc4 !important;
+}
+
+header {
+	height: 35px;
+	border-bottom: .05rem solid #e5e5e5;
+}
+
+#profile-picture {
+	margin-top: auto;
+	margin-bottom: auto;
+	border: solid #fff 5px;
+	-webkit-box-shadow: 50px 20px 0px -4px #0984e3;
+	-moz-box-shadow: 50px 20px 0px -4px #0984e3;
+	box-shadow: 50px 20px 0px -4px #0984e3;
+}
+@media only screen and (max-width: 400px) {
+	#profile-picture {
+		display: none;
+	}
+}
+@media only screen and (max-width: 600px) {
+	body p {
+		font-size: 16px;
+	}
+	body h1 {
+		font-size: 34px;
+	}
+	body h4 {
+		font-size: 18px;
+	}
+	.skill-icon {
+		margin: 5px;
+		font-size: 35px;
+	}
+	.middle-button {
+		display: none;
+	}
+	#profile-picture {
+		width: 150px;
+	}
+
+}
+.blog-footer {
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: #333;
+    border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p{
+    font-size: 16px;
+}
+@media only screen and (min-width: 600px) {
+	body p {
+		font-size: 20px;
+	}
+	.skill-icon {
+		margin: 5px;
+		font-size: 80px;
+	}
+
+	.middle-button {
+		display: block;
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		margin-left: -51px;
+	}
+	.middle-button i {
+		display: block;
+		-webkit-animation:bounce-top .9s both;animation:bounce-top .9s both
+	}
+	.bounce-top{-webkit-animation:bounce-top .9s both;animation:bounce-top .9s both}
+@-webkit-keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}@keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}
+	.personal-info {
+		height: 100vh;
+	}
+	#profile-picture {
+		width: 200px;
+	}
+}
+
+
+#exp-section .big-nums {
+	font-weight: 700;
+	background: -webkit-linear-gradient(90deg, #6c5ce7 0%, #e84393 100%);
+    background: -moz-linear-gradient(90deg, #6c5ce7 0%, #e84393 100%);
+    background: -o-linear-gradient(90deg, #6c5ce7 0%, #e84393 100%);
+    background: linear-gradient(90deg, #6c5ce7 0%, #e84393 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
