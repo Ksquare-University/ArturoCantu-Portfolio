@@ -7,28 +7,26 @@
 		<title>Arturo Cantú Cisneros - Profile</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+		<script src="https://kit.fontawesome.com/5c5dfb18ee.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header class="container mt-4">
+
 			<a href="#" class="text-decoration-none">
-				<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-left-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-				<path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h1z"></path>
-				</svg>
+				<i class="fas fa-comment-alt"></i>
 				Contact Me
 			</a>
 			
 		</header>
 
-		<div class="container mt-5">
+		<div class="container mt-5 mb-5">
 			<section class="personal-info">
 				<div class="media">
 				  <div class="media-body">
 				    <p>Hello,</p>
 				    <h1 class="mt-0 mb-1">I'm Arturo</h1>
-				    <p>I'm a 23 years old Mexican, passionate for technollogy, self-motivated to learn and to face new challenges.</p>
-				    <p>Associate Software Engineer at Ksquare</p>
-				    <p>Software Developer</p>
-				    <p>Web Developer</p>
+				    <p>I'm a 23 years old Mexican software developer, passionate for technollogy, self-motivated to learn and to face new challenges. I'm specializing on web development and JavaScript at Ksquare University.</p>
+				    <p><a></a></p>
 				  </div>
 				  <img src="./images/profile-picture.jpg" class="rounded-circle ml-3" id="profile-picture" alt="Profile Picture" >
 				</div>
@@ -39,10 +37,8 @@
 
 				<div class="middle-button" align="center">
 				<a href="#exp-section" class="text-decoration-none">
-					<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-mouse" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-					<path fill-rule="evenodd" d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm4 8V5a4 4 0 0 0-8 0v6a4 4 0 0 0 8 0zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5z"></path>
-					</svg>
 					My Experience
+					<i class="fas fa-arrow-down"></i>
 				</a>
 				</div>
 			</section>
@@ -103,13 +99,14 @@
 			      <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cake.png" class="rounded m-2" alt="..." width="300px">
 			    </div>
 			  </div>
-			
-
-
-
 		</div>
 
-
+		<footer class="blog-footer"> 
+			<p>Built using <a href="https://getbootstrap.com/">Bootstrap</a> by Arturo Cantú.</p>
+			<p>
+			   <a href="#">Back to top</a>
+			</p>
+		</footer>
 	</body>
 </html>
 
@@ -131,8 +128,12 @@ h2, h3, h4, h5, p {
 	-moz-box-shadow: 50px 20px 0px -4px #0984e3;
 	box-shadow: 50px 20px 0px -4px #0984e3;
 }
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
+	#profile-picture {
+		display: none;
+	}
+}
+@media only screen and (min-width: 400px) {
 	body p {
 		font-size: 16px;
 	}
@@ -154,7 +155,16 @@ h2, h3, h4, h5, p {
 	}
 
 }
-
+.blog-footer {
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: #333;
+    border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p{
+    font-size: 16px;
+}
 @media only screen and (min-width: 600px) {
 	body p {
 		font-size: 20px;
@@ -170,9 +180,12 @@ h2, h3, h4, h5, p {
 	left: 50%;
 	margin-left: -51px;
 	}
-	.middle-button svg {
+	.middle-button i {
 		display: block;
+		-webkit-animation:bounce-top .9s both;animation:bounce-top .9s both
 	}
+	.bounce-top{-webkit-animation:bounce-top .9s both;animation:bounce-top .9s both}
+@-webkit-keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}@keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}
 	.personal-info {
 		height: 100vh;
 	}
