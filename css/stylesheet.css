@@ -42,14 +42,20 @@ header {
 }
 
 #profile-picture {
-	margin-top: auto;
-	margin-bottom: auto;
-	border: solid #fff 5px;
-	-webkit-box-shadow: 50px 20px 0px -4px #0984e3;
-	-moz-box-shadow: 50px 20px 0px -4px #0984e3;
-	box-shadow: 50px 20px 0px -4px #0984e3;
+	position: relative;
+	top: -48px;
+	right: 0px;
+	z-index: -1000;
+	margin-bottom: -300px;
+
 }
-@media only screen and (max-width: 400px) {
+.row img {
+	border: #ff7675 solid 3px;
+}
+.row img : hover {
+	border: #ff7675 solid 3px;
+}
+@media only screen and (max-width: 425px) {
 	#profile-picture {
 		display: none;
 	}
@@ -72,7 +78,8 @@ header {
 		display: none;
 	}
 	#profile-picture {
-		width: 150px;
+		right:-50px;
+		width: 200px;
 	}
 
 }
@@ -112,11 +119,18 @@ header {
 		height: 100vh;
 	}
 	#profile-picture {
-		width: 200px;
+		width: 350px;
 	}
 }
 
-
+@media only screen and (min-width: 990px) {
+	#about-me {
+		padding-right: 100px; 
+	}
+	#profile-picture {
+		width: 400px;
+	}
+}
 #exp-section .big-nums {
 	font-weight: 700;
 	background: -webkit-linear-gradient(90deg, #6c5ce7 0%, #e84393 100%);
