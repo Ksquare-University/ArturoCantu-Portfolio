@@ -90,6 +90,9 @@ header {
    .spacer {
       height: 50px;
    }
+   .overlay {
+     opacity: 0.3;
+   }
 }
 
 @media only screen and (max-width: 600px) {
@@ -118,6 +121,9 @@ header {
    }
    .spacer {
       height: 100px;
+   }
+   .overlay {
+     opacity: 0.3;
    }
 }
 
@@ -262,6 +268,9 @@ header {
    .spacer {
       height: 100px;
    }
+   .overlay {
+     opacity: 0;
+   }
 }
 
 @media only screen and (min-width: 990px) {
@@ -286,6 +295,7 @@ header {
    .spacer {
       height: 100px;
    }
+
 }
 @media only screen and (min-width: 1400px) {
    .spacer {
@@ -403,7 +413,6 @@ header {
   height: 200px;
   width: 300px;
   border-radius: 0.25rem;
-  opacity: 0;
   transition: .5s ease;
   background-color: rgba(0, 184, 148, 0.7);
 }
