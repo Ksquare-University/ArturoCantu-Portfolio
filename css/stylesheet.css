@@ -145,14 +145,16 @@ header {
    }
    .skill-icon {
       margin: 5px;
+      text-rendering: geometricPrecision;
+      position: relative;
+      display: inline-block;
       font-size: 80px;
-      transition: 0.3s ease-in-out;
+      transition: transform .3s cubic-bezier(0.55, 0, 0.55, 0.2);
+      transform-origin: 50% 50%;
    }
    .skill-icon:hover {
-      font-size: 100px;
-      margin: -10px;
+      transform: scale(1.5);
    }
-   
    .personal-info {
    }
    #profile-picture {
