@@ -187,7 +187,15 @@ header {
       height: 170px;
    }
 }
-
+#languages i {
+   font-size: 20px;
+   background: -webkit-linear-gradient(45deg, #6c5ce7 0%, #e84393 100%);
+   background: -moz-linear-gradient(45deg, #6c5ce7 0%, #e84393 100%);
+   background: -o-linear-gradient(45deg, #6c5ce7 0%, #e84393 100%);
+   background: linear-gradient(45deg, #6c5ce7 0%, #e84393 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
 #exp-section .big-nums {
    font-weight: 700;
    font-size: 40px;
